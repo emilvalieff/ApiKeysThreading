@@ -15,3 +15,5 @@ def get_data_sync(urls):
 
 urls = ["http://postman-echo.com/delay/3"] * 10
 get_data_sync(urls) # 34 seconds
+ # number one
+
