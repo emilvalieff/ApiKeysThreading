@@ -1,3 +1,5 @@
+import threading
+
 import requests
 
 
@@ -18,7 +20,6 @@ for crytpo in crypto_response:
     if crytpo["currency"] == user_input:
         print(crytpo["price"])
         break
-
 
 
 
