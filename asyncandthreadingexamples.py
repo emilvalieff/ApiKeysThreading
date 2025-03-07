@@ -9,6 +9,9 @@ def get_data_sync(urls):
     for url in urls:
         json_array.append(requests.get(url).json)
     et = time.time()
-    elapsed_time = et - et
-    print("Execution time",elapsed_time, "seconds")
+    elapsed_time = et - st
+    print("Execution time" ,elapsed_time, "seconds")
     return json_array
+
+urls = ["http://postman-echo.com/delay/3"] * 10
+get_data_sync(urls) # 34 seconds
